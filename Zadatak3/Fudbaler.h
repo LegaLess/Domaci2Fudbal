@@ -15,13 +15,13 @@ public:
 	Fudbaler(string i, string r, string p) : ime(i), reprezentacija(r), pozicija(p) {}
 	Fudbaler(const Fudbaler&) = delete;
 
-	string getIme();
-	string getRep();
-	string getPoz();
+	string getIme() const;
+	string getRep() const;
+	string getPoz() const;
 
 	Fudbaler& promeni(string);
 
-	friend ostream& operator<<(ostream&, Fudbaler&);
+	friend ostream& operator<<(ostream&, const Fudbaler&);
 
 private:
 

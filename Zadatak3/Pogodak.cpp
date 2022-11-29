@@ -6,12 +6,12 @@
 using namespace std;
 
 
-Fudbaler& Pogodak::getFudb()
+Fudbaler& Pogodak::getFudb() const
 {
 	return fudbaler;
 }
 
-ostream& operator<<(ostream& it, Pogodak& p) {
+ostream& operator<<(ostream& it, const Pogodak& p) {
 	it << "[" << p.minut << "']" << " - " << p.fudbaler;
 
 	return it;

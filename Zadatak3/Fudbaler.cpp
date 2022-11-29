@@ -4,17 +4,17 @@
 
 using namespace std;
 
-string Fudbaler::getIme()
+string Fudbaler::getIme() const
 {
 	return ime;
 }
 
-string Fudbaler::getRep()
+string Fudbaler::getRep() const
 {
 	return reprezentacija;
 }
 
-string Fudbaler::getPoz()
+string Fudbaler::getPoz() const
 {
 	return pozicija;
 }
@@ -26,7 +26,7 @@ Fudbaler& Fudbaler::promeni(string s)
 	return *this;
 }
 
-ostream& operator<<(ostream& it, Fudbaler& f)
+ostream& operator<<(ostream& it, const Fudbaler& f)
 {
 	cout << f.getIme() <<  "(" << f.getPoz() << ") : " << f.getRep();
 
