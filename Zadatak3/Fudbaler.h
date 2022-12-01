@@ -6,26 +6,26 @@
 
 using namespace std;
 
-//enum Pozicije { GK, DEF, MID, FWD };
+enum Pozicije { GK, DEF, MID, FWD };
 
 class Fudbaler {
 
 public:
 
-	Fudbaler(string i, string r, string p) : ime(i), reprezentacija(r), pozicija(p) {}
+	Fudbaler(string i, string r, Pozicije p) : ime(i), reprezentacija(r), pozicija(p) {}
 	Fudbaler(const Fudbaler&) = delete;
 
 	string getIme() const;
 	string getRep() const;
-	string getPoz() const;
+	Pozicije getPoz() const;
 
-	Fudbaler& promeni(string);
+	Fudbaler& promeni(Pozicije);
 
 	friend ostream& operator<<(ostream&, const Fudbaler&);
 
 private:
 
-	string pozicija;
+	Pozicije pozicija;
 	string ime;
 	string reprezentacija;
 	

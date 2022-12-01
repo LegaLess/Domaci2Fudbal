@@ -14,12 +14,12 @@ string Fudbaler::getRep() const
 	return reprezentacija;
 }
 
-string Fudbaler::getPoz() const
+Pozicije Fudbaler::getPoz() const
 {
 	return pozicija;
 }
 
-Fudbaler& Fudbaler::promeni(string s)
+Fudbaler& Fudbaler::promeni(Pozicije s)
 {
 	pozicija = s;
 
