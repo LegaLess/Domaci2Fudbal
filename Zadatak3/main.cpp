@@ -15,11 +15,15 @@ int main() {
 
 	Pogodak p1(f3, 56);
 
-	cout << f1.getPoz() << endl;
+	cout << f1 << endl;
 
-	f1.promeni(GK);
+	cout << f2 << endl;
 
-	cout << f1.getPoz() << endl;
+	cout << f3 << endl;
+
+	f1 = p1.getFudb();
+
+	cout << p1;
 
 	return 0;
 }
